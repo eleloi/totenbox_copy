@@ -1,525 +1,809 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alquiler de trasteros en Vilanova i la Geltr&#xFA; - TotenBox</title>   
-    <meta name="description" content="Alquiler de trasteros  en Vilanova i la Geltr&#xFA;. Disfruta tu trastero 3.0  al instante, sin llaves ni fianzas. Alquila desde tu ordenador o m&#xF3;vil." />
-    <meta name="robots" content="index, follow">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favs/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favs/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favs/favicon-16x16.png">
+    <title>Alquiler de trasteros en Vilanova i la Geltr&#xFA; - TotenBox</title>
+    <meta
+      name="description"
+      content="Alquiler de trasteros  en Vilanova i la Geltr&#xFA;. Disfruta tu trastero 3.0  al instante, sin llaves ni fianzas. Alquila desde tu ordenador o m&#xF3;vil."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favs/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favs/favicon-16x16.png"
+    />
 
-<link rel="mask-icon" href="images/favs/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link
+      rel="mask-icon"
+      href="images/favs/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;600;900&family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;600;900&family=Teko:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/site.css" />
-    
-
 
     <link href="wizard/wizard.css" rel="stylesheet" />
 
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177615995-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177615995-2"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-177615995-2');
+      gtag("config", "UA-177615995-2");
     </script>
-
-</head>
-<body>
-    
-    <div id="cookieConsent" class="alert alert-info alert-dismissible fade show fixed-bottom" role="alert">
-       
-      Utilizamos cookies propias y de terceros para mejorar tu experiencia como usuario de esta web. Puedes ver nuestra <a href="cookies.html">política de cookies</a> y de <a href="privacitat.html">privacidad</a> para saber más.
-        <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close" data-cookie-string=".AspNet.Consent=yes; expires=Fri, 17 Feb 2023 22:32:08 GMT; path=/; secure; samesite=none">
-            <span aria-hidden="true">Aceptar</span>
-        </button>
+  </head>
+  <body>
+    <div
+      id="cookieConsent"
+      class="alert alert-info alert-dismissible fade show fixed-bottom"
+      role="alert"
+    >
+      Utilizamos cookies propias y de terceros para mejorar tu experiencia como
+      usuario de esta web. Puedes ver nuestra
+      <a href="cookies.html">política de cookies</a> y de
+      <a href="privacitat.html">privacidad</a> para saber más.
+      <button
+        type="button"
+        class="accept-policy close"
+        data-dismiss="alert"
+        aria-label="Close"
+        data-cookie-string=".AspNet.Consent=yes; expires=Fri, 17 Feb 2023 22:32:08 GMT; path=/; secure; samesite=none"
+      >
+        <span aria-hidden="true">Aceptar</span>
+      </button>
     </div>
     <script>
-        (function () {
-            var button = document.querySelector("#cookieConsent button[data-cookie-string]");
-            button.addEventListener("click", function (event) {
-                document.cookie = button.dataset.cookieString;
-            }, false);
-        })();
+      (function () {
+        var button = document.querySelector(
+          "#cookieConsent button[data-cookie-string]"
+        );
+        button.addEventListener(
+          "click",
+          function (event) {
+            document.cookie = button.dataset.cookieString;
+          },
+          false
+        );
+      })();
     </script>
 
     <header class="main-header">
-
-        <div class="container">
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 logo-header">
+            <a href="\.html"> <img class="logo" src="images/logo1.png" /></a>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-12">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 logo-header"><a href="\.html"> <img class="logo" src="images/logo1.png" /></a></div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 header-text  d-none d-sm-block">
-                            <h2><i class="fa fa-mobile-alt"></i><i class="fab fa-whatsapp"></i>665 155 155</h2>
-                            <a href="mailto:info@totenbox.com">info@totenbox.com</a>
-                        </div>
-                        <div class="col-lg-6 header-button ">
-                            <a href="lloguer.html" class="btn-style-lloga">alquila tu trastero</a>
-
-
-                        </div>
-
-                    </div>
-                </div>
+              <div class="col-lg-6 header-text d-none d-sm-block">
+                <h2>
+                  <i class="fa fa-mobile-alt"></i
+                  ><i class="fab fa-whatsapp"></i>665 155 155
+                </h2>
+                <a href="mailto:info@totenbox.com">info@totenbox.com</a>
+              </div>
+              <div class="col-lg-6 header-button">
+                <a href="lloguer.html" class="btn-style-lloga"
+                  >alquila tu trastero</a
+                >
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-fluid bg-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-xl navbar-light bg-menu p-0">
+      </div>
+      <div class="container-fluid bg-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-xl navbar-light bg-menu p-0">
+                <button
+                  class="navbar-toggler ml-auto"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link pr-lg-4" href="lloguer.html"
+                      >Alquilar trastero</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="serveis.html"
+                      >Servicios</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="guia.html"
+                      >Precios</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="centres.html"
+                      >Centros</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="normativa.html"
+                      >Normativa de uso</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="faqs.html"
+                      >Faqs</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="contacte.html"
+                      >Contactar</a
+                    >
+                    <a class="nav-item nav-link" href="clients.html">Login</a>
 
-                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-item nav-link pr-lg-4" href="lloguer.html">Alquilar trastero</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="serveis.html">Servicios</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="guia.html">Precios</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="centres.html">Centros</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="normativa.html">Normativa de uso</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="faqs.html">Faqs</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="contacte.html">Contactar</a>
-                                    <a class="nav-item nav-link" href="clients.html">Login</a>
-                                    
-    <div class="div-idiomas">
-        <a href="lloguer.html#" class="selec-cultura">ca</a> / <a href="lloguer.html#" class="selec-cultura">es</a>
-           
-    </div>
-                                </div>
-                            </div>
-                        </nav>
+                    <div class="div-idiomas">
+                      <a href="lloguer.html#" class="selec-cultura">ca</a> /
+                      <a href="lloguer.html#" class="selec-cultura">es</a>
                     </div>
-
+                  </div>
                 </div>
+              </nav>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!--Sticky Header-->
-        <div class="sticky-header">
-            <div class="container">
-                <div class="clearfix">
-                    <!--Logo-->
-                    <div class="logo float-left">
-                        <a href="index.html" class="img-responsive"><img src="images/logo-pe.png" alt="" title=""></a>
-                    </div>
+      <!--Sticky Header-->
+      <div class="sticky-header">
+        <div class="container">
+          <div class="clearfix">
+            <!--Logo-->
+            <div class="logo float-left">
+              <a href="index.html" class="img-responsive"
+                ><img src="images/logo-pe.png" alt="" title=""
+              /></a>
+            </div>
 
-                    <!--Right Col-->
-                    <div class="right-col float-right">
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-lg">
-                            <div class="navbar-collapse collapse clearfix">
-                                <ul class="navigation clearfix">
-                                    <li class="current ">
-                                        <a href="lloguer.html">Alquilar trastero</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="serveis.html">Servicios</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="guia.html">Guia de mides</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="centres.html">Centros</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="normativa.html">Normativa de uso</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="faqs.html">Faqs</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="contacte.html">Contactar</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="clients.html">Login</a>
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </nav><!-- Main Menu End-->
-                    </div>
+            <!--Right Col-->
+            <div class="right-col float-right">
+              <!-- Main Menu -->
+              <nav class="main-menu navbar-expand-lg">
+                <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <li class="current">
+                      <a href="lloguer.html">Alquilar trastero</a>
+                    </li>
+                    <li class="">
+                      <a href="serveis.html">Servicios</a>
+                    </li>
+                    <li class="">
+                      <a href="guia.html">Guia de mides</a>
+                    </li>
+                    <li class="">
+                      <a href="centres.html">Centros</a>
+                    </li>
+                    <li class="">
+                      <a href="normativa.html">Normativa de uso</a>
+                    </li>
+                    <li class="">
+                      <a href="faqs.html">Faqs</a>
+                    </li>
+                    <li class="">
+                      <a href="contacte.html">Contactar</a>
+                    </li>
+                    <li class="">
+                      <a href="clients.html">Login</a>
+                    </li>
+                  </ul>
                 </div>
-
-
+              </nav>
+              <!-- Main Menu End-->
             </div>
+          </div>
         </div>
-        <!--End Sticky Header-->
-
+      </div>
+      <!--End Sticky Header-->
     </header>
     <div class="container-fluid2">
+      <style>
+        .ElementsApp input {
+          border: 1px solid #c9e8f6;
+          padding: 5px 4px !important;
+        }
+      </style>
 
-        <style>
-    .ElementsApp input {
-        border: 1px solid #c9e8f6;
-        padding: 5px 4px !important;
-    }
-</style>
-
-<section>
-    <div class="tot">
-        <div class="container">
+      <section>
+        <div class="tot">
+          <div class="container">
             <div class="row">
-                <div class="col-lg-7">
-                    <h1>Alquila tu trastero</h1>
-                    <h4>Est&#xE1;s a punto de alquilar tu trastero. S&#xF3;lo en tres clicks podr&#xE1;s empezar a dejar tus pertenencias en nuestro centro.</h4>
-
-
-                </div>
-                <div class="col-lg-5 divprop mr-auto d-none d-sm-block">
-                    <figure class="image flot-bob-y">
-                        <img src="images/robot450.png" class="img-fluid prop" />
-                    </figure>
-
-
-                </div>
+              <div class="col-lg-7">
+                <h1>Alquila tu trastero</h1>
+                <h4>
+                  Est&#xE1;s a punto de alquilar tu trastero. S&#xF3;lo en tres
+                  clicks podr&#xE1;s empezar a dejar tus pertenencias en nuestro
+                  centro.
+                </h4>
+              </div>
+              <div class="col-lg-5 divprop mr-auto d-none d-sm-block">
+                <figure class="image flot-bob-y">
+                  <img src="images/robot450.png" class="img-fluid prop" />
+                </figure>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="section-lloga">
+      </section>
+      <section class="section-lloga">
+        <div class="container-fluid" id="divMain">
+          <div class="row justify-content-center">
+            <div
+              class="col-11 col-sm-10 col-md-10 col-lg-10 col-xl-10 text-center p-0 mt-3 mb-2"
+            >
+              <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <h2 id="heading">Alquilar trastero</h2>
+                <p>Rellena todos los campos requeridos para continuar</p>
+                <form id="msform" name="msform" method="post">
+                  <input
+                    type="hidden"
+                    value="a262e639-8209-eb11-84a7-1c666d965b97"
+                    data-val="true"
+                    data-val-required="The CentroId field is required."
+                    id="pedido_CentroId"
+                    name="pedido.CentroId"
+                  />
+                  <input
+                    type="hidden"
+                    value="8"
+                    data-val="true"
+                    data-val-required="The ProvinciaId field is required."
+                    id="pedido_ProvinciaId"
+                    name="pedido.ProvinciaId"
+                  />
+                  <input
+                    type="hidden"
+                    value="0"
+                    data-val="true"
+                    data-val-required="The Codigo_trastero field is required."
+                    id="pedido_Codigo_trastero"
+                    name="pedido.Codigo_trastero"
+                  />
+                  <input
+                    type="hidden"
+                    id="Trastero_Id"
+                    name="Trastero_Id"
+                    value="0"
+                  />
+                  <input
+                    type="hidden"
+                    data-val="true"
+                    data-val-length="The field Descripcion must be a string with a maximum length of 150."
+                    data-val-length-max="150"
+                    id="pedido_Descripcion"
+                    name="pedido.Descripcion"
+                    value=""
+                  />
+                  <input
+                    type="hidden"
+                    data-val="true"
+                    data-val-length="The field Stripe_priceId must be a string with a maximum length of 50."
+                    data-val-length-max="50"
+                    id="pedido_Stripe_priceId"
+                    name="pedido.Stripe_priceId"
+                    value=""
+                  />
+                  <input
+                    type="hidden"
+                    data-val="true"
+                    data-val-number="The field Precio must be a number."
+                    id="pedido_Precio"
+                    name="pedido.Precio"
+                    value=""
+                  />
+                  <!-- progressbar -->
+                  <ul id="progressbar">
+                    <li class="active" id="account">
+                      <strong>Elige las medidas de tu trastero</strong>
+                    </li>
 
-    <div class="container-fluid" id="divMain">
-        <div class="row justify-content-center">
-            <div class="col-11 col-sm-10 col-md-10 col-lg-10 col-xl-10 text-center p-0 mt-3 mb-2">
-                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                    <h2 id="heading">Alquilar trastero </h2>
-                    <p>Rellena todos los campos requeridos para continuar</p>
-                    <form id="msform" name="msform" method="post">
-                        <input type="hidden" value="a262e639-8209-eb11-84a7-1c666d965b97" data-val="true" data-val-required="The CentroId field is required." id="pedido_CentroId" name="pedido.CentroId" />
-                        <input type="hidden" value="8" data-val="true" data-val-required="The ProvinciaId field is required." id="pedido_ProvinciaId" name="pedido.ProvinciaId" />
-                        <input type="hidden" value="0" data-val="true" data-val-required="The Codigo_trastero field is required." id="pedido_Codigo_trastero" name="pedido.Codigo_trastero" />
-                        <input type="hidden" id="Trastero_Id" name="Trastero_Id" value="0" />
-                        <input type="hidden" data-val="true" data-val-length="The field Descripcion must be a string with a maximum length of 150." data-val-length-max="150" id="pedido_Descripcion" name="pedido.Descripcion" value="" />
-                        <input type="hidden" data-val="true" data-val-length="The field Stripe_priceId must be a string with a maximum length of 50." data-val-length-max="50" id="pedido_Stripe_priceId" name="pedido.Stripe_priceId" value="" />
-                        <input type="hidden" data-val="true" data-val-number="The field Precio must be a number." id="pedido_Precio" name="pedido.Precio" value="" />
-                        <!-- progressbar -->
-                        <ul id="progressbar">
-                            <li class="active" id="account"><strong>Elige las medidas de tu trastero</strong></li>
+                    <li id="personal"><strong>Tus datos</strong></li>
+                    <li id="payment"><strong>Confirmar</strong></li>
+                  </ul>
+                  <div class="progress" id="progress1">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <br />
+                  <!-- fieldsets -->
+                  <fieldset>
+                    <div class="form-card">
+                      <div class="row">
+                        <div class="col-7">
+                          <h2 class="fs-title">
+                            Elige las medidas de tu trastero:
+                          </h2>
+                        </div>
+                        <div class="col-5">
+                          <h2 class="steps">Paso 1 - 3</h2>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-lg-12 col-md-12 col-sm-12 content-column"
+                        >
+                          <div class="content-box">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="other-option clearfix">
+                                  <div class="size-box cl-medidas">
+                                    <div
+                                      class="select-box"
+                                      id="selector-medidas"
+                                    >
+                                      <select class="selectmenu form-control">
+                                        <option value="">Seleccionar</option>
 
-                            <li id="personal"><strong>Tus datos</strong></li>
-                            <li id="payment"><strong>Confirmar</strong></li>
-
-                        </ul>
-                        <div class="progress" id="progress1">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div> <br> <!-- fieldsets -->
-                        <fieldset>
-                            <div class="form-card">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Elige las medidas de tu trastero:</h2>
+                                        <option
+                                          data-imagen=""
+                                          data-precio="27,0000"
+                                          data-precioId="price_1KE9OyHavGeHtBv9HTC6YyOQ"
+                                          class="medidas"
+                                          value="1"
+                                        >
+                                          XS Box (1 m2) (1.5 m altura)
+                                        </option>
+                                        <option
+                                          data-imagen=""
+                                          data-precio="63,0000"
+                                          data-precioId="price_1KE9RJHavGeHtBv9ke0uJ0Jz"
+                                          class="medidas"
+                                          value="5"
+                                        >
+                                          M Box (2 m2) (3 m altura)
+                                        </option>
+                                        <option
+                                          data-imagen=""
+                                          data-precio="73,0000"
+                                          data-precioId="price_1KE9RWHavGeHtBv96xxX4ldl"
+                                          class="medidas"
+                                          value="6"
+                                        >
+                                          M Box+ (2.5 m2) (3 m altura)
+                                        </option>
+                                        <option
+                                          data-imagen=""
+                                          data-precio="95,0000"
+                                          data-precioId="price_1KE9RzHavGeHtBv9fl7byG75"
+                                          class="medidas"
+                                          value="8"
+                                        >
+                                          L Box+ (3.5 m2) (3 m altura)
+                                        </option>
+                                      </select>
                                     </div>
-                                    <div class="col-5">
-                                        <h2 class="steps">Paso 1 - 3</h2>
-                                    </div>
+                                  </div>
                                 </div>
-                                <div class="row">
-
-                                    <div class="col-lg-12 col-md-12 col-sm-12 content-column">
-                                        <div class="content-box">
-
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="other-option clearfix">
-                                                        <div class="size-box  cl-medidas">
-                                                            <div class="select-box " id="selector-medidas">
-                                                                <select class="selectmenu form-control">
-                                                                    <option value="">Seleccionar</option>
-
-                                                                        <option data-imagen="" data-precio="27,0000" data-precioId="price_1KE9OyHavGeHtBv9HTC6YyOQ" class="medidas" value="1"> XS Box (1 m2) (1.5 m altura)</option>
-                                                                        <option data-imagen="" data-precio="63,0000" data-precioId="price_1KE9RJHavGeHtBv9ke0uJ0Jz" class="medidas" value="5"> M Box (2 m2) (3 m altura)</option>
-                                                                        <option data-imagen="" data-precio="73,0000" data-precioId="price_1KE9RWHavGeHtBv96xxX4ldl" class="medidas" value="6"> M Box+ (2.5 m2) (3 m altura)</option>
-                                                                        <option data-imagen="" data-precio="95,0000" data-precioId="price_1KE9RzHavGeHtBv9fl7byG75" class="medidas" value="8"> L Box+ (3.5 m2) (3 m altura)</option>
-
-                                                                </select>
-
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="size-box">
-                                                        <span class="smallspanprecio"></span>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="service-box  mx-auto">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12  d-flex justify-content-end pt-5">
-
-                                        <div class="planos" id="plano" style="width: 100%">
-                                            <object type="image/svg+xml" data="images/trasterostot.svg" id="planosvg" style="width: 95%;  border:1px solid black; "></object>
-                                        </div>
-                                    </div>
-
+                              </div>
+                              <div class="col-6">
+                                <div class="size-box">
+                                  <span class="smallspanprecio"></span>
                                 </div>
-                                <div class="alert alert-primary fade" role="alert" id="alerta1">
-                                    Tienes que elegir un trastero antes de continuar con la compra.
-                                </div>
-                            </div> <input type="button" name="next" id="fase1" data-id="fase1" class="next action-button" value="Siguiente" />
-                        </fieldset>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="service-box mx-auto"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-end pt-5"
+                        >
+                          <div class="planos" id="plano" style="width: 100%">
+                            <object
+                              type="image/svg+xml"
+                              data="images/trasterostot.svg"
+                              id="planosvg"
+                              style="width: 95%; border: 1px solid black"
+                            ></object>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="alert alert-primary fade"
+                        role="alert"
+                        id="alerta1"
+                      >
+                        Tienes que elegir un trastero antes de continuar con la
+                        compra.
+                      </div>
+                    </div>
+                    <input
+                      type="button"
+                      name="next"
+                      id="fase1"
+                      data-id="fase1"
+                      class="next action-button"
+                      value="Siguiente"
+                    />
+                  </fieldset>
 
-                        <fieldset>
-                            <div class="form-card">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Tus datos:</h2>
-                                    </div>
-                                    <div class="col-5">
-                                        <h2 class="steps">Paso 2 - 3</h2>
-                                    </div>
-                                </div>
-                                <div class="form-check pt-4">
-                                    <input type="checkbox" class="form-check-input" id="checkEmpresa">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        Contrato en nombre de una empresa
-                                    </label>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels" id="labelNombre">Nombre *</label>
-                                    <input type="text" class="form-control" required maxlength="20" autocomplete="off" data-val="true" data-val-length="The field Nombre must be a string with a maximum length of 20." data-val-length-max="20" id="pedido_Nombre" name="pedido.Nombre" value="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group" id="divApellidos">
-                                    <label class="fieldlabels">Apellidos *</label>
-                                    <input type="text" class="form-control" required maxlength="50" autocomplete="off" data-val="true" data-val-length="The field Apellidos must be a string with a maximum length of 50." data-val-length-max="50" id="pedido_Apellidos" name="pedido.Apellidos" value="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">CIF/NIF *</label>
-                                    <input type="text" class="form-control" required maxlength="10" autocomplete="off" data-val="true" data-val-length="The field Nif must be a string with a maximum length of 10." data-val-length-max="10" id="pedido_Nif" name="pedido.Nif" value="">
-                                </div>
+                  <fieldset>
+                    <div class="form-card">
+                      <div class="row">
+                        <div class="col-7">
+                          <h2 class="fs-title">Tus datos:</h2>
+                        </div>
+                        <div class="col-5">
+                          <h2 class="steps">Paso 2 - 3</h2>
+                        </div>
+                      </div>
+                      <div class="form-check pt-4">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="checkEmpresa"
+                        />
+                        <label class="form-check-label" for="exampleCheck1">
+                          Contrato en nombre de una empresa
+                        </label>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels" id="labelNombre"
+                          >Nombre *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="20"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Nombre must be a string with a maximum length of 20."
+                          data-val-length-max="20"
+                          id="pedido_Nombre"
+                          name="pedido.Nombre"
+                          value=""
+                        />
+                      </div>
+                      <div
+                        class="col-lg-12 col-md-12 col-sm-12 form-group"
+                        id="divApellidos"
+                      >
+                        <label class="fieldlabels">Apellidos *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="50"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Apellidos must be a string with a maximum length of 50."
+                          data-val-length-max="50"
+                          id="pedido_Apellidos"
+                          name="pedido.Apellidos"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels">CIF/NIF *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="10"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Nif must be a string with a maximum length of 10."
+                          data-val-length-max="10"
+                          id="pedido_Nif"
+                          name="pedido.Nif"
+                          value=""
+                        />
+                      </div>
 
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels">Direcci&#xF3;n *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="100"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Direccion must be a string with a maximum length of 100."
+                          data-val-length-max="100"
+                          id="pedido_Direccion"
+                          name="pedido.Direccion"
+                          value=""
+                        />
+                      </div>
 
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">Direcci&#xF3;n *</label>
-                                    <input type="text" class="form-control" required maxlength="100" autocomplete="off" data-val="true" data-val-length="The field Direccion must be a string with a maximum length of 100." data-val-length-max="100" id="pedido_Direccion" name="pedido.Direccion" value="">
-                                </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels">Cod. Postal *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="5"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field CodPostal must be a string with a maximum length of 5."
+                          data-val-length-max="5"
+                          id="pedido_CodPostal"
+                          name="pedido.CodPostal"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels">Ciudad *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="20"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Ciudad must be a string with a maximum length of 20."
+                          data-val-length-max="20"
+                          id="pedido_Ciudad"
+                          name="pedido.Ciudad"
+                          value=""
+                        />
+                      </div>
 
-                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">Cod. Postal *</label>
-                                    <input type="text" class="form-control" required maxlength="5" autocomplete="off" data-val="true" data-val-length="The field CodPostal must be a string with a maximum length of 5." data-val-length-max="5" id="pedido_CodPostal" name="pedido.CodPostal" value="">
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">Ciudad *</label>
-                                    <input type="text" class="form-control" required maxlength="20" autocomplete="off" data-val="true" data-val-length="The field Ciudad must be a string with a maximum length of 20." data-val-length-max="20" id="pedido_Ciudad" name="pedido.Ciudad" value="">
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels"
+                          >Correo electr&#xF3;nico *</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          required
+                          maxlength="70"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Email must be a string with a maximum length of 70."
+                          data-val-length-max="70"
+                          id="pedido_Email"
+                          name="pedido.Email"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels"
+                          >Repetir Correo electr&#xF3;nico *</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          required
+                          maxlength="70"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-equalto="Las direcciones email no coinciden"
+                          data-val-equalto-other="*.Email"
+                          data-val-length="The field Password must be a string with a maximum length of 250."
+                          data-val-length-max="250"
+                          id="pedido_Password"
+                          name="pedido.Password"
+                          value=""
+                        />
+                        <span
+                          class="text-danger field-validation-valid"
+                          data-valmsg-for="pedido.Password"
+                          data-valmsg-replace="true"
+                        ></span>
+                      </div>
 
-                                </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels">Tel&#xE9;fono *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          required
+                          maxlength="9"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Telefono must be a string with a maximum length of 9."
+                          data-val-length-max="9"
+                          id="pedido_Telefono"
+                          name="pedido.Telefono"
+                          value=""
+                        />
+                      </div>
+                      <hr />
+                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label class="fieldlabels"
+                          >&#xBF;Tienes el c&#xF3;digo de un cup&#xF3;n?
+                          Introd&#xFA;celo para que se aplique el
+                          descuento</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          maxlength="15"
+                          autocomplete="off"
+                          data-val="true"
+                          data-val-length="The field Cupon must be a string with a maximum length of 50."
+                          data-val-length-max="50"
+                          id="pedido_Cupon"
+                          name="pedido.Cupon"
+                          value=""
+                        />
+                      </div>
+                      <div class="form-check pt-4">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="checkPar"
+                        />
+                        <label class="form-check-label" for="exampleCheck1">
+                          <a href="Privacitat.html" target="_blank"
+                            >He leído y acepto la política de privacidad</a
+                          >
+                        </label>
+                      </div>
 
+                      <div
+                        class="alert alert-warning fade"
+                        role="alert"
+                        id="alerta2"
+                      >
+                        Ya existe un cliente con esa direcci&#xF3;n email. Por
+                        favor, entra desde tu panel de control y realiza el alta
+                        all&#xED;.
+                      </div>
+                    </div>
+                    <input
+                      type="submit"
+                      name="next"
+                      id="fase2"
+                      data-id="fase2"
+                      class="action-button"
+                      value="Siguiente"
+                      onclick="return testcheck()"
+                    />
+                    <input
+                      type="button"
+                      name="previous"
+                      class="previous action-button-previous"
+                      value="Anterior"
+                    />
+                  </fieldset>
 
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">Correo electr&#xF3;nico *</label>
-                                    <input type="email" class="form-control" required maxlength="70" autocomplete="off" data-val="true" data-val-length="The field Email must be a string with a maximum length of 70." data-val-length-max="70" id="pedido_Email" name="pedido.Email" value="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">Repetir Correo electr&#xF3;nico *</label>
-                                    <input type="email" class="form-control" required maxlength="70" autocomplete="off" data-val="true" data-val-equalto="Las direcciones email no coinciden" data-val-equalto-other="*.Email" data-val-length="The field Password must be a string with a maximum length of 250." data-val-length-max="250" id="pedido_Password" name="pedido.Password" value="">
-                                    <span class="text-danger field-validation-valid" data-valmsg-for="pedido.Password" data-valmsg-replace="true"></span>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">Tel&#xE9;fono *</label>
-                                    <input type="text" class="form-control" required maxlength="9" autocomplete="off" data-val="true" data-val-length="The field Telefono must be a string with a maximum length of 9." data-val-length-max="9" id="pedido_Telefono" name="pedido.Telefono" value="">
-                                </div>
-                                <hr />
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <label class="fieldlabels">&#xBF;Tienes el c&#xF3;digo de un cup&#xF3;n? Introd&#xFA;celo para que se aplique el descuento</label>
-                                    <input type="text" class="form-control" maxlength="15" autocomplete="off" data-val="true" data-val-length="The field Cupon must be a string with a maximum length of 50." data-val-length-max="50" id="pedido_Cupon" name="pedido.Cupon" value="">
-
-                                </div>
-                                <div class="form-check pt-4">
-                                    <input type="checkbox" class="form-check-input" id="checkPar">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <a href="Privacitat.html" target="_blank">He leído y acepto la política de privacidad</a>
-                                    </label>
-                                </div>
-
-                                <div class="alert alert-warning fade" role="alert" id="alerta2">
-                                    Ya existe un cliente con esa direcci&#xF3;n email. Por favor, entra desde tu panel de control y realiza el alta all&#xED;.
-                                </div>
-
-                            </div> <input type="submit" name="next" id="fase2" data-id="fase2" class=" action-button" value="Siguiente" onclick="return testcheck()" /> <input type="button" name="previous" class="previous action-button-previous" value="Anterior" />
-                        </fieldset>
-
-
-                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8J3KSiA4OM5OkzlDtdulNmSrb5BHr0dLyRbZGCjvDtZ1g8a6hVJ_Oo-YqE_C51Xp8LgpI5pnFfdd2Mrfg6tKd7AhJ2P1mEuRKmaJdwSJN879xXhXMKloieCr1UrAcqepx54w-0DufJQ1pnNx2b7hcY8" /></form>
-                </div>
+                  <input
+                    name="__RequestVerificationToken"
+                    type="hidden"
+                    value="CfDJ8J3KSiA4OM5OkzlDtdulNmSrb5BHr0dLyRbZGCjvDtZ1g8a6hVJ_Oo-YqE_C51Xp8LgpI5pnFfdd2Mrfg6tKd7AhJ2P1mEuRKmaJdwSJN879xXhXMKloieCr1UrAcqepx54w-0DufJQ1pnNx2b7hcY8"
+                  />
+                </form>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
+      </section>
     </div>
     <footer class="footer-tot">
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 pt-5">
+            <img src="images/logofooter.png" class="img-fluid" />
+            <br />TotEnBox <br />C/ Joan LLaverias, 33 <br />08800 Vilanova i la
+            Geltrú <br />(Barcelona)
+          </div>
+          <div class="col-lg-7 col-md-7 pt-5">
             <div class="row">
-                <div class="col-lg-5 col-md-5 pt-5">
-                    <img src="images/logofooter.png" class="img-fluid" />
-                    <br />TotEnBox
-                    <br />C/ Joan LLaverias, 33
-                    <br />08800 Vilanova i la Geltrú
-                    <br />(Barcelona)
+              <div class="col-lg-6">
+                <h2>
+                  <i class="fa fa-mobile-alt"></i
+                  ><i class="fab fa-whatsapp"></i>665 155 155
+                </h2>
 
-                </div>
-                <div class="col-lg-7 col-md-7 pt-5">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h2><i class="fa fa-mobile-alt"></i><i class="fab fa-whatsapp"></i>665 155 155</h2>
-
-                            <a href="mailto:info@totenbox.com">info@totenbox.com</a>
-                        </div>
-                        <div class="col-lg-6">
-                            <a href="lloguer.html" class="btn-style-lloga">
-                                alquila tu trastero
-                            </a>
-                            <br />
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <a href="mailto:info@totenbox.com">info@totenbox.com</a>
+              </div>
+              <div class="col-lg-6">
+                <a href="lloguer.html" class="btn-style-lloga">
+                  alquila tu trastero
+                </a>
+                <br />
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8">
-
-                    <i class="fab fa-facebook-f"></i><i class="fab fa-whatsapp"></i>
-                    <br /> <a href="avislegal.html">
-                        Aviso legal
-                    </a>
-                    <br /> <a href="Privacitat.html">
-                        Pol&#xED;tica de privacidad
-                    </a>
-                    <br /> <a href="Cookies.html">Pol&#xED;tica de cookies</a>
-                    <br /><br /> <a href="https://keemetrix.com" target="_blank"><img src="images/powerkeemetrix.png" /></a>
-                </div>
-                <div class="col-lg-4 mt-auto">
-
-                    <div class="d-flex flex-row ">
-
-
-                        <img src="images/robot-footer.png" class="robot-footer" />
-                    </div>
-
-
-                </div>
-
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <i class="fab fa-facebook-f"></i><i class="fab fa-whatsapp"></i>
+            <br />
+            <a href="avislegal.html"> Aviso legal </a> <br />
+            <a href="Privacitat.html"> Pol&#xED;tica de privacidad </a> <br />
+            <a href="Cookies.html">Pol&#xED;tica de cookies</a>
+          </div>
+          <div class="col-lg-4 mt-auto">
+            <div class="d-flex flex-row">
+              <img src="images/robot-footer.png" class="robot-footer" />
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
 
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
-    
 
-
-    <script type="text/javascript" src="js/jquery.bootstrap-touchspin.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.bootstrap-touchspin.js"
+    ></script>
     <script src="js/newalq.js"></script>
     <script src="wizard/newwiz.js"></script>
 
-<script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script>
-        function testcheck() {
-            if (!jQuery("#checkPar").is(":checked")) {
-                alert("Debes aceptar la política de privacidad");
-                return false;
-            }
-
-            
-            return true;
+      function testcheck() {
+        if (!jQuery("#checkPar").is(":checked")) {
+          alert("Debes aceptar la política de privacidad");
+          return false;
         }
 
-        const checkbox = document.getElementById('checkEmpresa')
+        return true;
+      }
 
-        checkbox.addEventListener('change', (event) => {
-            if (event.currentTarget.checked) {
-                $("#labelNombre").html("Razón social *");
-                $('#pedido_Apellidos').prop('required', false);
-                $('#divApellidos').hide();
+      const checkbox = document.getElementById("checkEmpresa");
 
-            } else {
-                $("#labelNombre").html("Nombre *");
-                $('#pedido_Apellidos').prop('required', true);
-                $('#divApellidos').show();
-               
-            }
-        })
+      checkbox.addEventListener("change", (event) => {
+        if (event.currentTarget.checked) {
+          $("#labelNombre").html("Razón social *");
+          $("#pedido_Apellidos").prop("required", false);
+          $("#divApellidos").hide();
+        } else {
+          $("#labelNombre").html("Nombre *");
+          $("#pedido_Apellidos").prop("required", true);
+          $("#divApellidos").show();
+        }
+      });
     </script>
-
-
-
 
     <script>
-
-        $(".selec-cultura").click(function (e) {
-            e.preventDefault();
-            var segments = location.pathname.split('/');
-            var culture = $(this).html();
-            if (segments.length > 2) {
-                segments[1] = culture;
-                location.href = segments.join('/');
-            } else {
-                location.href = '/' + culture + location.pathname;
-            }
-
-
-        })
-
+      $(".selec-cultura").click(function (e) {
+        e.preventDefault();
+        var segments = location.pathname.split("/");
+        var culture = $(this).html();
+        if (segments.length > 2) {
+          segments[1] = culture;
+          location.href = segments.join("/");
+        } else {
+          location.href = "/" + culture + location.pathname;
+        }
+      });
     </script>
-</body>
+  </body>
 </html>

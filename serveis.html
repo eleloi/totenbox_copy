@@ -1,494 +1,604 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>serveis - TotenBox</title>   
-    <meta name="description" content="Alquiler de trasteros  en Vilanova i la Geltr&#xFA;. Disfruta tu trastero 3.0  al instante, sin llaves ni fianzas. Alquila desde tu ordenador o m&#xF3;vil." />
-    <meta name="robots" content="index, follow">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favs/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favs/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favs/favicon-16x16.png">
+    <title>serveis - TotenBox</title>
+    <meta
+      name="description"
+      content="Alquiler de trasteros  en Vilanova i la Geltr&#xFA;. Disfruta tu trastero 3.0  al instante, sin llaves ni fianzas. Alquila desde tu ordenador o m&#xF3;vil."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favs/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favs/favicon-16x16.png"
+    />
 
-<link rel="mask-icon" href="images/favs/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link
+      rel="mask-icon"
+      href="images/favs/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;600;900&family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;600;900&family=Teko:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/site.css" />
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177615995-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177615995-2"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-177615995-2');
+      gtag("config", "UA-177615995-2");
     </script>
-
-</head>
-<body>
-    
-    <div id="cookieConsent" class="alert alert-info alert-dismissible fade show fixed-bottom" role="alert">
-       
-      Utilizamos cookies propias y de terceros para mejorar tu experiencia como usuario de esta web. Puedes ver nuestra <a href="cookies.html">política de cookies</a> y de <a href="privacitat.html">privacidad</a> para saber más.
-        <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close" data-cookie-string=".AspNet.Consent=yes; expires=Fri, 17 Feb 2023 22:32:08 GMT; path=/; secure; samesite=none">
-            <span aria-hidden="true">Aceptar</span>
-        </button>
+  </head>
+  <body>
+    <div
+      id="cookieConsent"
+      class="alert alert-info alert-dismissible fade show fixed-bottom"
+      role="alert"
+    >
+      Utilizamos cookies propias y de terceros para mejorar tu experiencia como
+      usuario de esta web. Puedes ver nuestra
+      <a href="cookies.html">política de cookies</a> y de
+      <a href="privacitat.html">privacidad</a> para saber más.
+      <button
+        type="button"
+        class="accept-policy close"
+        data-dismiss="alert"
+        aria-label="Close"
+        data-cookie-string=".AspNet.Consent=yes; expires=Fri, 17 Feb 2023 22:32:08 GMT; path=/; secure; samesite=none"
+      >
+        <span aria-hidden="true">Aceptar</span>
+      </button>
     </div>
     <script>
-        (function () {
-            var button = document.querySelector("#cookieConsent button[data-cookie-string]");
-            button.addEventListener("click", function (event) {
-                document.cookie = button.dataset.cookieString;
-            }, false);
-        })();
+      (function () {
+        var button = document.querySelector(
+          "#cookieConsent button[data-cookie-string]"
+        );
+        button.addEventListener(
+          "click",
+          function (event) {
+            document.cookie = button.dataset.cookieString;
+          },
+          false
+        );
+      })();
     </script>
 
     <header class="main-header">
-
-        <div class="container">
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 logo-header">
+            <a href="\.html"> <img class="logo" src="images/logo1.png" /></a>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-12">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 logo-header"><a href="\.html"> <img class="logo" src="images/logo1.png" /></a></div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 header-text  d-none d-sm-block">
-                            <h2><i class="fa fa-mobile-alt"></i><i class="fab fa-whatsapp"></i>665 155 155</h2>
-                            <a href="mailto:info@totenbox.com">info@totenbox.com</a>
-                        </div>
-                        <div class="col-lg-6 header-button ">
-                            <a href="lloguer.html" class="btn-style-lloga">alquila tu trastero</a>
-
-
-                        </div>
-
-                    </div>
-                </div>
+              <div class="col-lg-6 header-text d-none d-sm-block">
+                <h2>
+                  <i class="fa fa-mobile-alt"></i
+                  ><i class="fab fa-whatsapp"></i>665 155 155
+                </h2>
+                <a href="mailto:info@totenbox.com">info@totenbox.com</a>
+              </div>
+              <div class="col-lg-6 header-button">
+                <a href="lloguer.html" class="btn-style-lloga"
+                  >alquila tu trastero</a
+                >
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-fluid bg-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-xl navbar-light bg-menu p-0">
+      </div>
+      <div class="container-fluid bg-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-xl navbar-light bg-menu p-0">
+                <button
+                  class="navbar-toggler ml-auto"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link pr-lg-4" href="lloguer.html"
+                      >Alquilar trastero</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="serveis.html"
+                      >Servicios</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="guia.html"
+                      >Precios</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="centres.html"
+                      >Centros</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="normativa.html"
+                      >Normativa de uso</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="faqs.html"
+                      >Faqs</a
+                    >
+                    <a class="nav-item nav-link pr-lg-4" href="contacte.html"
+                      >Contactar</a
+                    >
+                    <a class="nav-item nav-link" href="clients.html">Login</a>
 
-                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-item nav-link pr-lg-4" href="lloguer.html">Alquilar trastero</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="serveis.html">Servicios</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="guia.html">Precios</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="centres.html">Centros</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="normativa.html">Normativa de uso</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="faqs.html">Faqs</a>
-                                    <a class="nav-item nav-link  pr-lg-4" href="contacte.html">Contactar</a>
-                                    <a class="nav-item nav-link" href="clients.html">Login</a>
-                                    
-    <div class="div-idiomas">
-        <a href="serveis.html#" class="selec-cultura">ca</a> / <a href="serveis.html#" class="selec-cultura">es</a>
-           
-    </div>
-                                </div>
-                            </div>
-                        </nav>
+                    <div class="div-idiomas">
+                      <a href="serveis.html#" class="selec-cultura">ca</a> /
+                      <a href="serveis.html#" class="selec-cultura">es</a>
                     </div>
-
+                  </div>
                 </div>
+              </nav>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!--Sticky Header-->
-        <div class="sticky-header">
-            <div class="container">
-                <div class="clearfix">
-                    <!--Logo-->
-                    <div class="logo float-left">
-                        <a href="index.html" class="img-responsive"><img src="images/logo-pe.png" alt="" title=""></a>
-                    </div>
+      <!--Sticky Header-->
+      <div class="sticky-header">
+        <div class="container">
+          <div class="clearfix">
+            <!--Logo-->
+            <div class="logo float-left">
+              <a href="index.html" class="img-responsive"
+                ><img src="images/logo-pe.png" alt="" title=""
+              /></a>
+            </div>
 
-                    <!--Right Col-->
-                    <div class="right-col float-right">
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-lg">
-                            <div class="navbar-collapse collapse clearfix">
-                                <ul class="navigation clearfix">
-                                    <li class="current ">
-                                        <a href="lloguer.html">Alquilar trastero</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="serveis.html">Servicios</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="guia.html">Guia de mides</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="centres.html">Centros</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="normativa.html">Normativa de uso</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="faqs.html">Faqs</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="contacte.html">Contactar</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="clients.html">Login</a>
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </nav><!-- Main Menu End-->
-                    </div>
+            <!--Right Col-->
+            <div class="right-col float-right">
+              <!-- Main Menu -->
+              <nav class="main-menu navbar-expand-lg">
+                <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <li class="current">
+                      <a href="lloguer.html">Alquilar trastero</a>
+                    </li>
+                    <li class="">
+                      <a href="serveis.html">Servicios</a>
+                    </li>
+                    <li class="">
+                      <a href="guia.html">Guia de mides</a>
+                    </li>
+                    <li class="">
+                      <a href="centres.html">Centros</a>
+                    </li>
+                    <li class="">
+                      <a href="normativa.html">Normativa de uso</a>
+                    </li>
+                    <li class="">
+                      <a href="faqs.html">Faqs</a>
+                    </li>
+                    <li class="">
+                      <a href="contacte.html">Contactar</a>
+                    </li>
+                    <li class="">
+                      <a href="clients.html">Login</a>
+                    </li>
+                  </ul>
                 </div>
-
-
+              </nav>
+              <!-- Main Menu End-->
             </div>
+          </div>
         </div>
-        <!--End Sticky Header-->
-
+      </div>
+      <!--End Sticky Header-->
     </header>
     <div class="container-fluid2">
-
-        
-
-<section class="title-serveis">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1>SERVICIOS<br />TOTENBOX</h1>
-
-
-            </div>
-            <div class="col-lg-6  text-right d-none d-sm-block">
-
-
-
-            </div>
-        </div>
-    </div>
-
-</section>
-<section class="desc-serveis">
-    <div class="diagonal-box">
+      <section class="title-serveis">
         <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>SERVICIOS<br />TOTENBOX</h1>
+            </div>
+            <div class="col-lg-6 text-right d-none d-sm-block"></div>
+          </div>
+        </div>
+      </section>
+      <section class="desc-serveis">
+        <div class="diagonal-box">
+          <div class="container">
             <div class="row">
-                <div class="col-md-4 col-12">
-                    <img src="images/logo2b.png" class="img-fluid logo-medio" />
+              <div class="col-md-4 col-12">
+                <img src="images/logo2b.png" class="img-fluid logo-medio" />
+              </div>
+              <div class="col-md-8 col-12">
+                <div class="row">
+                  <div class="col-12 col-lg-7 col-md-7 col-sm-12">
+                    <h2 class="color1 pt-6">TRASTEROS URBANOS</h2>
+                  </div>
+                  <div
+                    class="col-12 col-lg-5 col-md-5 col-sm-12 d-none d-sm-block"
+                  >
+                    <figure class="image flot-bob-y">
+                      <img
+                        src="images/robot450.png"
+                        class="img-fluid robot-serveis"
+                      />
+                    </figure>
+                  </div>
                 </div>
-                <div class="col-md-8 col-12">
-                    <div class="row">
-                        <div class="col-12 col-lg-7 col-md-7 col-sm-12">
-                            <h2 class="color1 pt-6">
-                                TRASTEROS URBANOS
-                            </h2>
-
-                        </div>
-                        <div class="col-12 col-lg-5 col-md-5 col-sm-12 d-none d-sm-block">
-                            <figure class="image flot-bob-y">
-                                <img src="images/robot450.png" class="img-fluid robot-serveis" />
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="text-white">
-                                <strong>TotEnBox</strong>, olv&#xED;date de un trastero en el pol&#xED;gono de turno, ahora tienes tu espacio cerca de casa. Puedes ir a pie, pero tambi&#xE9;n puedes aparcar justo delante
-                            </p>
-                        </div>
-                    </div>
-
-
-
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-white">
+                      <strong>TotEnBox</strong>, olv&#xED;date de un trastero en
+                      el pol&#xED;gono de turno, ahora tienes tu espacio cerca
+                      de casa. Puedes ir a pie, pero tambi&#xE9;n puedes aparcar
+                      justo delante
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="row pb-200 lista-detalles">
-                <div class="col-md-3 text-center mt-5">
-                    <img src="images/24-hores.png" />
-
-                </div>
-                <div class="col-md-9 mt-5">
-                    <h3>24 horas / 365 d&#xED;as</h3>
-                    <p>
-                        Accede al centro TotEnBox cuando te vaya bien, ya sea de d&#xED;a o de noche, festivo o laborable. Nuestras instalaciones est&#xE1;n siempre a tu disposici&#xF3;n para que puedas guardar o recoger tus pertenencias. S&#xF3;lo tienes que usar uno de los sistemas de identificaci&#xF3;n que ponemos a tu disposici&#xF3;n a cualquier hora del d&#xED;a y podr&#xE1;s acceder al centro TotEnBox.
-
-                    </p>
-                </div>
-                <div class="col-md-3 text-center mt-5">
-                    <img src="images/icon-ma.png" />
-
-                </div>
-                <div class="col-md-9  mt-5">
-                    <h3>
-                        Sin llaves</h3>
-                                        <p>
-                                            Para acceder al centro TotEnBox no hace falta llaves. En el momento de formalizar el contrato recibir&#xE1;s un correo con tu c&#xF3;digo personal, el cual podr&#xE1;s introducir en los paneles num&#xE9;ricos que encontrar&#xE1;s en los accesos de nuestras instalaciones.
-                                            Tambi&#xE9;n podr&#xE1;s abrir la puerta del centro y de tu trastero mediante las funcionalidad que encontrar&#xE1;s en tu zona privada de cliente.
-                                            Como tercera opci&#xF3;n, tambi&#xE9;n podr&#xE1;s abrir las puertas de nuestras instalaciones a trav&#xE9;s de nuestras aplicaciones para dispositivos m&#xF3;viles (Android / iOs)
-
-
-                                        </p>
-</div>
-                <div class="col-md-3 text-center mt-5">
-                    <img src="images/icon-cam.png" />
-
-                </div>
-                <div class="col-md-9 mt-5">
-                    <h3>Grabaci&#xF3;n 24 horas con CCTV &#x2B; alarma antirrobo </h3>
-                    <p>
-                        La seguridad es muy importante para nosotros. Por este motivo, en el interior del centro TotEnBox disponemos de un circuito de grabaci&#xF3;n de im&#xE1;genes 24 horas conectado a una central de alarmas. En caso de un acceso no autorizado a nuestro centro, el sistema aut&#xF3;nomo de seguridad realizar&#xE1; las correspondientes comunicaciones al personal de seguridad que dar&#xE1; respuesta a la incidencia y comprobar&#xE1;, en tiempo real, si efectivamente se trata de una intrusi&#xF3;n.
-
-                    </p>
-                </div>
-                <div class="col-md-3 text-center mt-5">
-                    <img src="images/icon-mides.png" />
-
-                </div>
-                <div class="col-md-9 mt-5">
-                    <h3>Diversos tama&#xF1;os de trasteros </h3>
-                    <p>
-                        En TotEnBox disponemos de dos tama&#xF1;os de taquillas y diez tama&#xF1;os diferentes de trasteros. Como puedes ver, tenemos un Box para cada una de las necesidades de nuestros clientes. S&#xF3;lo tienes encontrar el que m&#xE1;s se adapte a las tuyas !!!!!&#xD;&#xA;Las medidas de los Box oscilan entre 1 m2 y 6,5 m2, todos ellos con una altura de 3 metros.
-
-                    </p>
-                </div>
-
+              <div class="col-md-3 text-center mt-5">
+                <img src="images/24-hores.png" />
+              </div>
+              <div class="col-md-9 mt-5">
+                <h3>24 horas / 365 d&#xED;as</h3>
+                <p>
+                  Accede al centro TotEnBox cuando te vaya bien, ya sea de
+                  d&#xED;a o de noche, festivo o laborable. Nuestras
+                  instalaciones est&#xE1;n siempre a tu disposici&#xF3;n para
+                  que puedas guardar o recoger tus pertenencias. S&#xF3;lo
+                  tienes que usar uno de los sistemas de identificaci&#xF3;n que
+                  ponemos a tu disposici&#xF3;n a cualquier hora del d&#xED;a y
+                  podr&#xE1;s acceder al centro TotEnBox.
+                </p>
+              </div>
+              <div class="col-md-3 text-center mt-5">
+                <img src="images/icon-ma.png" />
+              </div>
+              <div class="col-md-9 mt-5">
+                <h3>Sin llaves</h3>
+                <p>
+                  Para acceder al centro TotEnBox no hace falta llaves. En el
+                  momento de formalizar el contrato recibir&#xE1;s un correo con
+                  tu c&#xF3;digo personal, el cual podr&#xE1;s introducir en los
+                  paneles num&#xE9;ricos que encontrar&#xE1;s en los accesos de
+                  nuestras instalaciones. Tambi&#xE9;n podr&#xE1;s abrir la
+                  puerta del centro y de tu trastero mediante las funcionalidad
+                  que encontrar&#xE1;s en tu zona privada de cliente. Como
+                  tercera opci&#xF3;n, tambi&#xE9;n podr&#xE1;s abrir las
+                  puertas de nuestras instalaciones a trav&#xE9;s de nuestras
+                  aplicaciones para dispositivos m&#xF3;viles (Android / iOs)
+                </p>
+              </div>
+              <div class="col-md-3 text-center mt-5">
+                <img src="images/icon-cam.png" />
+              </div>
+              <div class="col-md-9 mt-5">
+                <h3>
+                  Grabaci&#xF3;n 24 horas con CCTV &#x2B; alarma antirrobo
+                </h3>
+                <p>
+                  La seguridad es muy importante para nosotros. Por este motivo,
+                  en el interior del centro TotEnBox disponemos de un circuito
+                  de grabaci&#xF3;n de im&#xE1;genes 24 horas conectado a una
+                  central de alarmas. En caso de un acceso no autorizado a
+                  nuestro centro, el sistema aut&#xF3;nomo de seguridad
+                  realizar&#xE1; las correspondientes comunicaciones al personal
+                  de seguridad que dar&#xE1; respuesta a la incidencia y
+                  comprobar&#xE1;, en tiempo real, si efectivamente se trata de
+                  una intrusi&#xF3;n.
+                </p>
+              </div>
+              <div class="col-md-3 text-center mt-5">
+                <img src="images/icon-mides.png" />
+              </div>
+              <div class="col-md-9 mt-5">
+                <h3>Diversos tama&#xF1;os de trasteros</h3>
+                <p>
+                  En TotEnBox disponemos de dos tama&#xF1;os de taquillas y diez
+                  tama&#xF1;os diferentes de trasteros. Como puedes ver, tenemos
+                  un Box para cada una de las necesidades de nuestros clientes.
+                  S&#xF3;lo tienes encontrar el que m&#xE1;s se adapte a las
+                  tuyas !!!!!&#xD;&#xA;Las medidas de los Box oscilan entre 1 m2
+                  y 6,5 m2, todos ellos con una altura de 3 metros.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-
-
-    </div>
-</section>
-<section class="section-more serveis-more">
-    <div class="container-80">
-        <div class="row">
+      </section>
+      <section class="section-more serveis-more">
+        <div class="container-80">
+          <div class="row">
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 feature-block">
-                <div class="feature-block-one  aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-
-                    <div class="hover-content"></div>
-                    <div class="icon-box">
-                        <img src="images/icon-down-1.png" />
-                    </div>
-                    <div class="lower-content text-center">
-                        <h3>Contratación online <br/>+ Gestión remota<br/> + Sin Papeleo </h3>
-                        <p>
-                            El sistema de gesti&#xF3;n de nuestro centro es aut&#xF3;nomo y permite el control remoto por parte del cliente.&#xD;&#xA;Desde tu &#xE1;rea de cliente y desde cualquier dispositivo podr&#xE1;s llevar a cabo las gestiones que realizar&#xED;as de forma presencial: dar de alta o baja tu contrato de alquiler, cambiar de trastero en caso de que hayan variado tus necesidades de espacio (siempre que haya disponibilidad) o consultar tus contratos y facturas.
-                            Nuestro sistema tambi&#xE9;n te permitir&#xE1; abrir las puertas de acceso al centro y de tu trastero a terceras personas, sin que t&#xFA; est&#xE9;s presente.&#xD;&#xA;&#xD;&#xA;Como puedes ver, a TotEnBox hemos apostado por un sistema de gesti&#xF3;n tecnol&#xF3;gicamente sofisticado que facilita la relaci&#xF3;n con el cliente y evita la utilizaci&#xF3;n de papeleo.
-                        </p>
-                    </div>
+              <div
+                class="feature-block-one aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                <div class="hover-content"></div>
+                <div class="icon-box">
+                  <img src="images/icon-down-1.png" />
                 </div>
+                <div class="lower-content text-center">
+                  <h3>
+                    Contratación online <br />+ Gestión remota<br />
+                    + Sin Papeleo
+                  </h3>
+                  <p>
+                    El sistema de gesti&#xF3;n de nuestro centro es
+                    aut&#xF3;nomo y permite el control remoto por parte del
+                    cliente.&#xD;&#xA;Desde tu &#xE1;rea de cliente y desde
+                    cualquier dispositivo podr&#xE1;s llevar a cabo las
+                    gestiones que realizar&#xED;as de forma presencial: dar de
+                    alta o baja tu contrato de alquiler, cambiar de trastero en
+                    caso de que hayan variado tus necesidades de espacio
+                    (siempre que haya disponibilidad) o consultar tus contratos
+                    y facturas. Nuestro sistema tambi&#xE9;n te permitir&#xE1;
+                    abrir las puertas de acceso al centro y de tu trastero a
+                    terceras personas, sin que t&#xFA; est&#xE9;s
+                    presente.&#xD;&#xA;&#xD;&#xA;Como puedes ver, a TotEnBox
+                    hemos apostado por un sistema de gesti&#xF3;n
+                    tecnol&#xF3;gicamente sofisticado que facilita la
+                    relaci&#xF3;n con el cliente y evita la utilizaci&#xF3;n de
+                    papeleo.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 feature-block">
-                <div class="feature-block-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
-
-                    <div class="hover-content"></div>
-                    <div class="icon-box">
-                        <img src="images/icon-down-2.png" />
-                    </div>
-
-                    <div class="lower-content text-center">
-                        <h3>Sin fianza  </h3>
-                        <p>No te pedimos ninguna fianza para empezar a hacer uso de nuestras instalaciones. De hecho, no hay per&#xED;odo de permanencia y estamos tan seguros de nuestras instalaciones que, si en los primeros 7 d&#xED;as de contrataci&#xF3;n por cualquier motivo no quedas satisfecho, te devolvemos tu dinero.</p>
-                    </div>
-
+              <div
+                class="feature-block-one aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              >
+                <div class="hover-content"></div>
+                <div class="icon-box">
+                  <img src="images/icon-down-2.png" />
                 </div>
+
+                <div class="lower-content text-center">
+                  <h3>Sin fianza</h3>
+                  <p>
+                    No te pedimos ninguna fianza para empezar a hacer uso de
+                    nuestras instalaciones. De hecho, no hay per&#xED;odo de
+                    permanencia y estamos tan seguros de nuestras instalaciones
+                    que, si en los primeros 7 d&#xED;as de contrataci&#xF3;n por
+                    cualquier motivo no quedas satisfecho, te devolvemos tu
+                    dinero.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 feature-block">
-                <div class="feature-block-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500">
-
-                    <div class="hover-content"></div>
-                    <div class="icon-box">
-                        <img src="images/icon-down-3.png" />
-                    </div>
-
-                    <div class="lower-content text-center">
-                        <h3>Zona de carga y descarga exclusiva</h3>
-                        <p>
-                            Somos una empresa dedicada al alquiler de trasteros en el &#xE1;mbito urbano. Por lo tanto, somos conscientes de las dificultades que existen en las ciudades para estacionar. Para dar soluci&#xF3;n a las necesidades de estacionamiento, hemos dotado el centro TotEnBox de una zona exclusiva de carga y descarga para nuestros clientes. De esta manera, podr&#xE1;s estacionar justo delante del centro TotEnBox y cargar o descargar tus pertenencias con la m&#xE1;xima comodidad.
-                        </p>
-                    </div>
-
+              <div
+                class="feature-block-one aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="2500"
+              >
+                <div class="hover-content"></div>
+                <div class="icon-box">
+                  <img src="images/icon-down-3.png" />
                 </div>
+
+                <div class="lower-content text-center">
+                  <h3>Zona de carga y descarga exclusiva</h3>
+                  <p>
+                    Somos una empresa dedicada al alquiler de trasteros en el
+                    &#xE1;mbito urbano. Por lo tanto, somos conscientes de las
+                    dificultades que existen en las ciudades para estacionar.
+                    Para dar soluci&#xF3;n a las necesidades de estacionamiento,
+                    hemos dotado el centro TotEnBox de una zona exclusiva de
+                    carga y descarga para nuestros clientes. De esta manera,
+                    podr&#xE1;s estacionar justo delante del centro TotEnBox y
+                    cargar o descargar tus pertenencias con la m&#xE1;xima
+                    comodidad.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 feature-block">
-                <div class="feature-block-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
-
-                    <div class="hover-content"></div>
-                    <div class="icon-box">
-                        <img src="images/icon-down-4.png" />
-                    </div>
-
-                    <div class="lower-content text-center">
-                        <h3>
-                            Todo incluido  </h3>
-                        <p>
-                            En TotEnBox hemos optado por una pol&#xED;tica comercial directa y transparente. Nuestras condiciones son simples: en el precio del alquiler de tu Box est&#xE1; todo incluido (seguro, alumbrado, impuestos)&#xD;&#xA;No queremos ninguna sorpresa para nuestros clientes.
-                        </p>
-</div>
-
+              <div
+                class="feature-block-one aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+              >
+                <div class="hover-content"></div>
+                <div class="icon-box">
+                  <img src="images/icon-down-4.png" />
                 </div>
+
+                <div class="lower-content text-center">
+                  <h3>Todo incluido</h3>
+                  <p>
+                    En TotEnBox hemos optado por una pol&#xED;tica comercial
+                    directa y transparente. Nuestras condiciones son simples: en
+                    el precio del alquiler de tu Box est&#xE1; todo incluido
+                    (seguro, alumbrado, impuestos)&#xD;&#xA;No queremos ninguna
+                    sorpresa para nuestros clientes.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 feature-block">
-                <div class="feature-block-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
-
-                    <div class="hover-content"></div>
-                    <div class="icon-box">
-                        <img src="images/icon-down-5.png" />
-                    </div>
-
-                    <div class="lower-content text-center">
-                        <h3>
-                            Pago seguro  </h3>
-                        <p> El cobro por el alquiler de tu Box se realizar&#xE1; mensualmente y mediante la tarjeta bancaria que nos hayas indicado en el momento de formalizar el contrato de alquiler. Estas transacciones est&#xE1;n gestionadas mediante la pasarela de pago seguro STRIPE, la cual garantiza la seguridad tanto de los pagos como de los datos personales de nuestros clientes. No almacenamos tus datos bancarios. </p>
-</div>
-
+              <div
+                class="feature-block-one aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+              >
+                <div class="hover-content"></div>
+                <div class="icon-box">
+                  <img src="images/icon-down-5.png" />
                 </div>
+
+                <div class="lower-content text-center">
+                  <h3>Pago seguro</h3>
+                  <p>
+                    El cobro por el alquiler de tu Box se realizar&#xE1;
+                    mensualmente y mediante la tarjeta bancaria que nos hayas
+                    indicado en el momento de formalizar el contrato de
+                    alquiler. Estas transacciones est&#xE1;n gestionadas
+                    mediante la pasarela de pago seguro STRIPE, la cual
+                    garantiza la seguridad tanto de los pagos como de los datos
+                    personales de nuestros clientes. No almacenamos tus datos
+                    bancarios.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 feature-block">
-                <div class="feature-block-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
-
-                    <div class="hover-content"></div>
-                    <div class="icon-box">
-                        <img src="images/icon-down-6.png" />
-                    </div>
-                    <div class="lower-content text-center">
-                        <h3>
-                            Alquila en tres clicks  </h3>
-                            <p>
-                                Nuestra web te permite contratar tu Box desde cualquier dispositivo. Navegar para obtener informaci&#xF3;n y decidir qu&#xE9; tama&#xF1;o resulta m&#xE1;s adecuado para tus necesidades.
-
-                                Una vez hayas decidido el tama&#xF1;o, s&#xF3;lo tienes que iniciar el proceso de contrataci&#xF3;n. El sistema te mostrar&#xE1; la disponibilidad de trasteros en nuestras instalaciones y te permitir&#xE1; elegir. Seguidamente, s&#xF3;lo deber&#xE1;s seguir las instrucciones que encontrar&#xE1;s en pantalla, facilitar la informaci&#xF3;n requerida y en cinco minutos podr&#xE1;s empezar a llenar el Box con tus pertenencias.
-                            </p>
-</div>
+              <div
+                class="feature-block-one aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+              >
+                <div class="hover-content"></div>
+                <div class="icon-box">
+                  <img src="images/icon-down-6.png" />
                 </div>
+                <div class="lower-content text-center">
+                  <h3>Alquila en tres clicks</h3>
+                  <p>
+                    Nuestra web te permite contratar tu Box desde cualquier
+                    dispositivo. Navegar para obtener informaci&#xF3;n y decidir
+                    qu&#xE9; tama&#xF1;o resulta m&#xE1;s adecuado para tus
+                    necesidades. Una vez hayas decidido el tama&#xF1;o,
+                    s&#xF3;lo tienes que iniciar el proceso de
+                    contrataci&#xF3;n. El sistema te mostrar&#xE1; la
+                    disponibilidad de trasteros en nuestras instalaciones y te
+                    permitir&#xE1; elegir. Seguidamente, s&#xF3;lo deber&#xE1;s
+                    seguir las instrucciones que encontrar&#xE1;s en pantalla,
+                    facilitar la informaci&#xF3;n requerida y en cinco minutos
+                    podr&#xE1;s empezar a llenar el Box con tus pertenencias.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="veure">
-    <div class="container">
-        <div class="row">
+      </section>
+      <section class="veure">
+        <div class="container">
+          <div class="row">
             <div class="col-md-6 col-lg-6 col-12">
-                <div class="robot-codi">
-                    <img src="images/robotbajo.png" />
-                </div>
+              <div class="robot-codi">
+                <img src="images/robotbajo.png" />
+              </div>
             </div>
             <div class="col-md-6 col-lg-6 col-12 p-5">
-                <h3>
-                    &#xBF;Quieres verlo antes?</h3>
-                <p>
-                    &#xA1;P&#xED;denos tu c&#xF3;digo temporal para hacernos una visita!</p>
-                <a href="Visites.html" class="btn-style-codi"> p&#xED;denos el c&#xF3;digo</a>
-</div>
+              <h3>&#xBF;Quieres verlo antes?</h3>
+              <p>
+                &#xA1;P&#xED;denos tu c&#xF3;digo temporal para hacernos una
+                visita!
+              </p>
+              <a href="Visites.html" class="btn-style-codi">
+                p&#xED;denos el c&#xF3;digo</a
+              >
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-
-
-
+      </section>
     </div>
     <footer class="footer-tot">
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 pt-5">
+            <img src="images/logofooter.png" class="img-fluid" />
+            <br />TotEnBox <br />C/ Joan LLaverias, 33 <br />08800 Vilanova i la
+            Geltrú <br />(Barcelona)
+          </div>
+          <div class="col-lg-7 col-md-7 pt-5">
             <div class="row">
-                <div class="col-lg-5 col-md-5 pt-5">
-                    <img src="images/logofooter.png" class="img-fluid" />
-                    <br />TotEnBox
-                    <br />C/ Joan LLaverias, 33
-                    <br />08800 Vilanova i la Geltrú
-                    <br />(Barcelona)
+              <div class="col-lg-6">
+                <h2>
+                  <i class="fa fa-mobile-alt"></i
+                  ><i class="fab fa-whatsapp"></i>665 155 155
+                </h2>
 
-                </div>
-                <div class="col-lg-7 col-md-7 pt-5">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h2><i class="fa fa-mobile-alt"></i><i class="fab fa-whatsapp"></i>665 155 155</h2>
-
-                            <a href="mailto:info@totenbox.com">info@totenbox.com</a>
-                        </div>
-                        <div class="col-lg-6">
-                            <a href="lloguer.html" class="btn-style-lloga">
-                                alquila tu trastero
-                            </a>
-                            <br />
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <a href="mailto:info@totenbox.com">info@totenbox.com</a>
+              </div>
+              <div class="col-lg-6">
+                <a href="lloguer.html" class="btn-style-lloga">
+                  alquila tu trastero
+                </a>
+                <br />
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8">
-
-                    <i class="fab fa-facebook-f"></i><i class="fab fa-whatsapp"></i>
-                    <br /> <a href="avislegal.html">
-                        Aviso legal
-                    </a>
-                    <br /> <a href="Privacitat.html">
-                        Pol&#xED;tica de privacidad
-                    </a>
-                    <br /> <a href="Cookies.html">Pol&#xED;tica de cookies</a>
-                    <br /><br /> <a href="https://keemetrix.com" target="_blank"><img src="images/powerkeemetrix.png" /></a>
-                </div>
-                <div class="col-lg-4 mt-auto">
-
-                    <div class="d-flex flex-row ">
-
-
-                        <img src="images/robot-footer.png" class="robot-footer" />
-                    </div>
-
-
-                </div>
-
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <i class="fab fa-facebook-f"></i><i class="fab fa-whatsapp"></i>
+            <br />
+            <a href="avislegal.html"> Aviso legal </a> <br />
+            <a href="Privacitat.html"> Pol&#xED;tica de privacidad </a> <br />
+            <a href="Cookies.html">Pol&#xED;tica de cookies</a>
+          </div>
+          <div class="col-lg-4 mt-auto">
+            <div class="d-flex flex-row">
+              <img src="images/robot-footer.png" class="robot-footer" />
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
 
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
-    
-
 
     <script>
-
-        $(".selec-cultura").click(function (e) {
-            e.preventDefault();
-            var segments = location.pathname.split('/');
-            var culture = $(this).html();
-            if (segments.length > 2) {
-                segments[1] = culture;
-                location.href = segments.join('/');
-            } else {
-                location.href = '/' + culture + location.pathname;
-            }
-
-
-        })
-
+      $(".selec-cultura").click(function (e) {
+        e.preventDefault();
+        var segments = location.pathname.split("/");
+        var culture = $(this).html();
+        if (segments.length > 2) {
+          segments[1] = culture;
+          location.href = segments.join("/");
+        } else {
+          location.href = "/" + culture + location.pathname;
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
